@@ -1,0 +1,12 @@
+output = "gen/model"
+pkgname = "model"
+no-tests = true
+wipe = true
+
+[psql]
+dbname = "world"
+host = "127.0.0.1"
+port = 5432
+user = "postgres"
+pass = "psql"
+sslmode = "disable"
