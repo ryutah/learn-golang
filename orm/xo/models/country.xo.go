@@ -9,21 +9,21 @@ import (
 
 // Country represents a row from 'public.country'.
 type Country struct {
-	Code           string          `json:"code"`           // code
-	Name           string          `json:"name"`           // name
-	Continent      string          `json:"continent"`      // continent
-	Region         string          `json:"region"`         // region
-	Surfacearea    float32         `json:"surfacearea"`    // surfacearea
-	Indepyear      sql.NullInt64   `json:"indepyear"`      // indepyear
-	Population     int             `json:"population"`     // population
-	Lifeexpectancy sql.NullFloat64 `json:"lifeexpectancy"` // lifeexpectancy
-	Gnp            sql.NullFloat64 `json:"gnp"`            // gnp
-	Gnpold         sql.NullFloat64 `json:"gnpold"`         // gnpold
-	Localname      string          `json:"localname"`      // localname
-	Governmentform string          `json:"governmentform"` // governmentform
-	Headofstate    sql.NullString  `json:"headofstate"`    // headofstate
-	Capital        sql.NullInt64   `json:"capital"`        // capital
-	Code2          string          `json:"code2"`          // code2
+	Code           string          `json:"code" db:"code"`                     // code
+	Name           string          `json:"name" db:"name"`                     // name
+	Continent      string          `json:"continent" db:"continent"`           // continent
+	Region         string          `json:"region" db:"region"`                 // region
+	Surfacearea    float32         `json:"surfacearea" db:"surfacearea"`       // surfacearea
+	Indepyear      sql.NullInt64   `json:"indepyear" db:"indepyear"`           // indepyear
+	Population     int             `json:"population" db:"population"`         // population
+	Lifeexpectancy sql.NullFloat64 `json:"lifeexpectancy" db:"lifeexpectancy"` // lifeexpectancy
+	Gnp            sql.NullFloat64 `json:"gnp" db:"gnp"`                       // gnp
+	Gnpold         sql.NullFloat64 `json:"gnpold" db:"gnpold"`                 // gnpold
+	Localname      string          `json:"localname" db:"localname"`           // localname
+	Governmentform string          `json:"governmentform" db:"governmentform"` // governmentform
+	Headofstate    sql.NullString  `json:"headofstate" db:"headofstate"`       // headofstate
+	Capital        sql.NullInt64   `json:"capital" db:"capital"`               // capital
+	Code2          string          `json:"code2" db:"code2"`                   // code2
 	// xo fields
 	_exists, _deleted bool
 }

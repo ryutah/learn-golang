@@ -8,10 +8,10 @@ import (
 
 // Countrylanguage represents a row from 'public.countrylanguage'.
 type Countrylanguage struct {
-	Countrycode string  `json:"countrycode"` // countrycode
-	Language    string  `json:"language"`    // language
-	Isofficial  bool    `json:"isofficial"`  // isofficial
-	Percentage  float32 `json:"percentage"`  // percentage
+	Countrycode string  `json:"countrycode" db:"countrycode"` // countrycode
+	Language    string  `json:"language" db:"language"`       // language
+	Isofficial  bool    `json:"isofficial" db:"isofficial"`   // isofficial
+	Percentage  float32 `json:"percentage" db:"percentage"`   // percentage
 	// xo fields
 	_exists, _deleted bool
 }

@@ -9,11 +9,11 @@ import (
 
 // City represents a row from 'public.city'.
 type City struct {
-	ID          int    `json:"id"`          // id
-	Name        string `json:"name"`        // name
-	Countrycode string `json:"countrycode"` // countrycode
-	District    string `json:"district"`    // district
-	Population  int    `json:"population"`  // population
+	ID          int    `json:"id" db:"id"`                   // id
+	Name        string `json:"name" db:"name"`               // name
+	Countrycode string `json:"countrycode" db:"countrycode"` // countrycode
+	District    string `json:"district" db:"district"`       // district
+	Population  int    `json:"population" db:"population"`   // population
 	// xo fields
 	_exists, _deleted bool
 }
