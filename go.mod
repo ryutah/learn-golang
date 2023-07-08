@@ -3,12 +3,15 @@ module github.com/ryutah/learn-golang
 go 1.20
 
 require (
+	cloud.google.com/go/datastore v1.11.0
+	github.com/bufbuild/connect-go v1.9.0
 	github.com/friendsofgo/errors v0.9.2
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/lib/pq v1.10.6
 	github.com/volatiletech/null/v8 v8.1.2
 	github.com/volatiletech/sqlboiler/v4 v4.14.2
 	github.com/volatiletech/strmangle v0.0.4
+	google.golang.org/protobuf v1.31.0
 	gorm.io/driver/postgres v1.5.0
 	gorm.io/gen v0.3.22
 	gorm.io/gorm v1.25.0
@@ -19,7 +22,6 @@ require (
 	cloud.google.com/go v0.110.2 // indirect
 	cloud.google.com/go/compute v1.19.3 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
-	cloud.google.com/go/datastore v1.11.0 // indirect
 	github.com/ericlagergren/decimal v0.0.0-20211103172832-aca2edc11f73 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/gofrs/uuid v4.2.0+incompatible // indirect
@@ -52,7 +54,6 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20230526203410-71b5a4ffd15e // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230526203410-71b5a4ffd15e // indirect
 	google.golang.org/grpc v1.55.0 // indirect
-	google.golang.org/protobuf v1.30.0 // indirect
 	gorm.io/datatypes v1.2.0 // indirect
 	gorm.io/driver/mysql v1.5.0 // indirect
 	gorm.io/hints v1.1.1 // indirect
