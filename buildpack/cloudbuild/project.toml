@@ -1,0 +1,11 @@
+# see
+#   - https://cloud.google.com/docs/buildpacks/set-environment-variables?hl=ja#remote_builds
+#   - https://cloud.google.com/docs/buildpacks/go?hl=ja#compilation_flags
+
+[[build.env]]
+name = "GOOGLE_BUILDABLE"
+value = "./cmd/http"
+
+[[build.env]]
+name = "GOOGLE_CLEAR_SOURCE"
+value = "1"
