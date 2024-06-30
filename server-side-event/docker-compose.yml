@@ -1,0 +1,21 @@
+services:
+  server:
+    image: golang:1.22-alpine3.20
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["go", "run", "./server"]
+    ports:
+      - "8080:8080"
+  client:
+    image: golang:1.22-alpine3.20
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["go", "run", "./client"]
+    environment:
+      - SERVER_HOST=http://localhost:8080
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
